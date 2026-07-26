@@ -1,0 +1,210 @@
+{
+  "animals": [
+    {
+      "id": 1,
+      "name": "Max",
+      "species": "perro",
+      "breed": "Golden Retriever",
+      "age": 3,
+      "weight": 32.5,
+      "ownerId": 1,
+      "active": true,
+      "medicalHistory": ["Vacunacion anual", "Desparasitacion"],
+      "lastVisit": "2026-01-15T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Luna",
+      "species": "gato",
+      "breed": "Siames",
+      "age": 5,
+      "weight": 4.2,
+      "ownerId": 2,
+      "active": true,
+      "medicalHistory": ["Esterilizacion", "Vacunacion triple felina"],
+      "lastVisit": "2025-12-10T09:15:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Rocky",
+      "species": "perro",
+      "breed": "Bulldog Frances",
+      "age": 2,
+      "weight": 12.8,
+      "ownerId": 3,
+      "active": false,
+      "medicalHistory": ["Problemas respiratorios", "Alergias"],
+      "lastVisit": "2025-11-20T16:45:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Milo",
+      "species": "gato",
+      "breed": "Persa",
+      "age": 7,
+      "weight": 5.1,
+      "ownerId": 4,
+      "active": true,
+      "medicalHistory": ["Enfermedad renal cronica"],
+      "lastVisit": "2026-02-01T14:20:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Nala",
+      "species": "perro",
+      "breed": "Labrador",
+      "age": 4,
+      "weight": 28.0,
+      "ownerId": 5,
+      "active": true,
+      "medicalHistory": ["Displasia de cadera"],
+      "lastVisit": "2026-01-28T11:30:00Z"
+    },
+    {
+      "id": 6,
+      "name": "Simba",
+      "species": "gato",
+      "breed": "Maine Coon",
+      "age": 3,
+      "weight": 7.8,
+      "ownerId": 6,
+      "active": true,
+      "medicalHistory": ["Cardiomiopatia"],
+      "lastVisit": "2026-01-20T15:00:00Z"
+    },
+    {
+      "id": 7,
+      "name": "Bruno",
+      "species": "perro",
+      "breed": "Pastor Aleman",
+      "age": 6,
+      "weight": 38.2,
+      "ownerId": 7,
+      "active": false,
+      "medicalHistory": ["Torsion gastrica", "Cirugia de emergencia"],
+      "lastVisit": "2025-10-05T09:00:00Z"
+    },
+    {
+      "id": 8,
+      "name": "Coco",
+      "species": "conejo",
+      "breed": "Belier",
+      "age": 2,
+      "weight": 2.3,
+      "ownerId": 8,
+      "active": true,
+      "medicalHistory": ["Problemas dentales"],
+      "lastVisit": "2026-02-05T12:45:00Z"
+    },
+    {
+      "id": 9,
+      "name": "Toby",
+      "species": "perro",
+      "breed": "Yorkshire",
+      "age": 1,
+      "weight": 2.8,
+      "ownerId": 9,
+      "active": true,
+      "medicalHistory": ["Vacunacion inicial"],
+      "lastVisit": "2026-02-10T16:30:00Z"
+    },
+    {
+      "id": 10,
+      "name": "Gizmo",
+      "species": "gato",
+      "breed": "Bengala",
+      "age": 4,
+      "weight": 6.5,
+      "ownerId": 10,
+      "active": true,
+      "medicalHistory": ["Infeccion urinaria"],
+      "lastVisit": "2026-01-25T11:20:00Z"
+    },
+    {
+      "id": 11,
+      "name": "Lola",
+      "species": "perro",
+      "breed": "Poodle",
+      "age": 8,
+      "weight": 7.5,
+      "ownerId": 11,
+      "active": true,
+      "medicalHistory": ["Artritis", "Problemas de vision"],
+      "lastVisit": "2026-02-12T13:00:00Z"
+    },
+    {
+      "id": 12,
+      "name": "Pelusa",
+      "species": "conejo",
+      "breed": "Enano",
+      "age": 1,
+      "weight": 1.5,
+      "ownerId": 12,
+      "active": true,
+      "medicalHistory": ["Revision inicial"],
+      "lastVisit": "2026-02-14T10:00:00Z"
+    }
+  ],
+  "owners": [
+    {"id": 1, "name": "Maria Gonzalez", "phone": "+34 611 222 333", "email": "maria@email.com", "address": "Calle Principal 123"},
+    {"id": 2, "name": "Carlos Ruiz", "phone": "+34 622 333 444", "email": "carlos@email.com", "address": "Avenida Central 456"},
+    {"id": 3, "name": "Ana Martinez", "phone": "+34 633 444 555", "email": "ana@email.com", "address": "Plaza Mayor 789"},
+    {"id": 4, "name": "Laura Fernandez", "phone": "+34 644 555 666", "email": "laura@email.com", "address": "Calle Sol 101"},
+    {"id": 5, "name": "Pedro Sanchez", "phone": "+34 655 666 777", "email": "pedro@email.com", "address": "Avenida Luna 202"},
+    {"id": 6, "name": "Elena Torres", "phone": "+34 666 777 888", "email": "elena@email.com", "address": "Calle Estrella 303"},
+    {"id": 7, "name": "Javier Moreno", "phone": "+34 677 888 999", "email": "javier@email.com", "address": "Avenida Sol 404"},
+    {"id": 8, "name": "Sofia Ramirez", "phone": "+34 688 999 000", "email": "sofia@email.com", "address": "Calle Luna 505"},
+    {"id": 9, "name": "Carmen Diaz", "phone": "+34 699 000 111", "email": "carmen@email.com", "address": "Avenida Mar 606"},
+    {"id": 10, "name": "Antonio Vega", "phone": "+34 610 111 222", "email": "antonio@email.com", "address": "Calle Cielo 707"},
+    {"id": 11, "name": "Isabel Crespo", "phone": "+34 621 222 333", "email": "isabel@email.com", "address": "Avenida Rio 808"},
+    {"id": 12, "name": "Marta Gil", "phone": "+34 632 333 444", "email": "marta@email.com", "address": "Calle Monte 909"}
+  ],
+  "appointments": [
+    {
+      "id": 1,
+      "animalId": 1,
+      "date": "2026-02-20T11:00:00Z",
+      "reason": "Revision anual",
+      "veterinarian": "Dr. Lopez",
+      "status": "scheduled"
+    },
+    {
+      "id": 2,
+      "animalId": 4,
+      "date": "2026-03-01T10:00:00Z",
+      "reason": "Control renal",
+      "veterinarian": "Dra. Garcia",
+      "status": "scheduled"
+    }
+  ],
+  "treatments": [
+    {
+      "id": 1,
+      "animalId": 1,
+      "name": "Antiparasitario",
+      "diagnosis": "Prevencion de parasitos",
+      "medication": ["NexGard"],
+      "cost": 45.50,
+      "startDate": "2026-01-15"
+    },
+    {
+      "id": 2,
+      "animalId": 3,
+      "name": "Tratamiento alergias",
+      "diagnosis": "Dermatitis alergica",
+      "medication": ["Apoquel", "Corticoide"],
+      "cost": 120.00,
+      "startDate": "2025-11-20",
+      "endDate": "2025-12-20"
+    },
+    {
+      "id": 3,
+      "animalId": 4,
+      "name": "Manejo renal",
+      "diagnosis": "Insuficiencia renal",
+      "medication": ["Royal Canin Renal", "Suplementos"],
+      "cost": 85.00,
+      "startDate": "2026-01-15"
+    }
+  ]
+}

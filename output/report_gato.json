@@ -1,0 +1,101 @@
+{
+  "timestamp": "2026-07-26T03:34:02.794Z",
+  "filter": "gato",
+  "summary": {
+    "totalAnimals": 4,
+    "activeAnimals": 4,
+    "inactiveAnimals": 0,
+    "averageWeight": 5.9,
+    "heaviestAnimal": {
+      "id": 6,
+      "name": "Simba",
+      "species": "gato",
+      "breed": "Maine Coon",
+      "age": 3,
+      "weight": 7.8,
+      "ownerId": 6,
+      "active": true,
+      "medicalHistory": [
+        "Cardiomiopatia"
+      ],
+      "lastVisit": "2026-01-20T15:00:00Z"
+    },
+    "lightestAnimal": {
+      "id": 2,
+      "name": "Luna",
+      "species": "gato",
+      "breed": "Siames",
+      "age": 5,
+      "weight": 4.2,
+      "ownerId": 2,
+      "active": true,
+      "medicalHistory": [
+        "Esterilizacion",
+        "Vacunacion triple felina"
+      ],
+      "lastVisit": "2025-12-10T09:15:00Z"
+    },
+    "speciesCount": {
+      "gato": 4
+    }
+  },
+  "animals": [
+    {
+      "id": 2,
+      "name": "Luna",
+      "species": "gato",
+      "breed": "Siames",
+      "age": 5,
+      "weight": 4.2,
+      "ownerId": 2,
+      "active": true,
+      "medicalHistory": [
+        "Esterilizacion",
+        "Vacunacion triple felina"
+      ],
+      "lastVisit": "2025-12-10T09:15:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Milo",
+      "species": "gato",
+      "breed": "Persa",
+      "age": 7,
+      "weight": 5.1,
+      "ownerId": 4,
+      "active": true,
+      "medicalHistory": [
+        "Enfermedad renal cronica"
+      ],
+      "lastVisit": "2026-02-01T14:20:00Z"
+    },
+    {
+      "id": 6,
+      "name": "Simba",
+      "species": "gato",
+      "breed": "Maine Coon",
+      "age": 3,
+      "weight": 7.8,
+      "ownerId": 6,
+      "active": true,
+      "medicalHistory": [
+        "Cardiomiopatia"
+      ],
+      "lastVisit": "2026-01-20T15:00:00Z"
+    },
+    {
+      "id": 10,
+      "name": "Gizmo",
+      "species": "gato",
+      "breed": "Bengala",
+      "age": 4,
+      "weight": 6.5,
+      "ownerId": 10,
+      "active": true,
+      "medicalHistory": [
+        "Infeccion urinaria"
+      ],
+      "lastVisit": "2026-01-25T11:20:00Z"
+    }
+  ]
+}

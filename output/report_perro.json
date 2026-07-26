@@ -1,0 +1,132 @@
+{
+  "timestamp": "2026-07-26T03:29:53.248Z",
+  "filter": "perro",
+  "summary": {
+    "totalAnimals": 6,
+    "activeAnimals": 4,
+    "inactiveAnimals": 2,
+    "averageWeight": 20.3,
+    "heaviestAnimal": {
+      "id": 7,
+      "name": "Bruno",
+      "species": "perro",
+      "breed": "Pastor Aleman",
+      "age": 6,
+      "weight": 38.2,
+      "ownerId": 7,
+      "active": false,
+      "medicalHistory": [
+        "Torsion gastrica",
+        "Cirugia de emergencia"
+      ],
+      "lastVisit": "2025-10-05T09:00:00Z"
+    },
+    "lightestAnimal": {
+      "id": 9,
+      "name": "Toby",
+      "species": "perro",
+      "breed": "Yorkshire",
+      "age": 1,
+      "weight": 2.8,
+      "ownerId": 9,
+      "active": true,
+      "medicalHistory": [
+        "Vacunacion inicial"
+      ],
+      "lastVisit": "2026-02-10T16:30:00Z"
+    },
+    "speciesCount": {
+      "perro": 6
+    }
+  },
+  "animals": [
+    {
+      "id": 1,
+      "name": "Max",
+      "species": "perro",
+      "breed": "Golden Retriever",
+      "age": 3,
+      "weight": 32.5,
+      "ownerId": 1,
+      "active": true,
+      "medicalHistory": [
+        "Vacunacion anual",
+        "Desparasitacion"
+      ],
+      "lastVisit": "2026-01-15T10:30:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Rocky",
+      "species": "perro",
+      "breed": "Bulldog Frances",
+      "age": 2,
+      "weight": 12.8,
+      "ownerId": 3,
+      "active": false,
+      "medicalHistory": [
+        "Problemas respiratorios",
+        "Alergias"
+      ],
+      "lastVisit": "2025-11-20T16:45:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Nala",
+      "species": "perro",
+      "breed": "Labrador",
+      "age": 4,
+      "weight": 28,
+      "ownerId": 5,
+      "active": true,
+      "medicalHistory": [
+        "Displasia de cadera"
+      ],
+      "lastVisit": "2026-01-28T11:30:00Z"
+    },
+    {
+      "id": 7,
+      "name": "Bruno",
+      "species": "perro",
+      "breed": "Pastor Aleman",
+      "age": 6,
+      "weight": 38.2,
+      "ownerId": 7,
+      "active": false,
+      "medicalHistory": [
+        "Torsion gastrica",
+        "Cirugia de emergencia"
+      ],
+      "lastVisit": "2025-10-05T09:00:00Z"
+    },
+    {
+      "id": 9,
+      "name": "Toby",
+      "species": "perro",
+      "breed": "Yorkshire",
+      "age": 1,
+      "weight": 2.8,
+      "ownerId": 9,
+      "active": true,
+      "medicalHistory": [
+        "Vacunacion inicial"
+      ],
+      "lastVisit": "2026-02-10T16:30:00Z"
+    },
+    {
+      "id": 11,
+      "name": "Lola",
+      "species": "perro",
+      "breed": "Poodle",
+      "age": 8,
+      "weight": 7.5,
+      "ownerId": 11,
+      "active": true,
+      "medicalHistory": [
+        "Artritis",
+        "Problemas de vision"
+      ],
+      "lastVisit": "2026-02-12T13:00:00Z"
+    }
+  ]
+}

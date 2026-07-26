@@ -1,0 +1,71 @@
+{
+  "timestamp": "2026-07-26T03:36:49.492Z",
+  "filter": "conejo",
+  "summary": {
+    "totalAnimals": 2,
+    "activeAnimals": 2,
+    "inactiveAnimals": 0,
+    "averageWeight": 1.9,
+    "heaviestAnimal": {
+      "id": 8,
+      "name": "Coco",
+      "species": "conejo",
+      "breed": "Belier",
+      "age": 2,
+      "weight": 2.3,
+      "ownerId": 8,
+      "active": true,
+      "medicalHistory": [
+        "Problemas dentales"
+      ],
+      "lastVisit": "2026-02-05T12:45:00Z"
+    },
+    "lightestAnimal": {
+      "id": 12,
+      "name": "Pelusa",
+      "species": "conejo",
+      "breed": "Enano",
+      "age": 1,
+      "weight": 1.5,
+      "ownerId": 12,
+      "active": true,
+      "medicalHistory": [
+        "Revision inicial"
+      ],
+      "lastVisit": "2026-02-14T10:00:00Z"
+    },
+    "speciesCount": {
+      "conejo": 2
+    }
+  },
+  "animals": [
+    {
+      "id": 8,
+      "name": "Coco",
+      "species": "conejo",
+      "breed": "Belier",
+      "age": 2,
+      "weight": 2.3,
+      "ownerId": 8,
+      "active": true,
+      "medicalHistory": [
+        "Problemas dentales"
+      ],
+      "lastVisit": "2026-02-05T12:45:00Z"
+    },
+    {
+      "id": 12,
+      "name": "Pelusa",
+      "species": "conejo",
+      "breed": "Enano",
+      "age": 1,
+      "weight": 1.5,
+      "ownerId": 12,
+      "active": true,
+      "medicalHistory": [
+        "Revision inicial"
+      ],
+      "lastVisit": "2026-02-14T10:00:00Z"
+    }
+  ]
+}

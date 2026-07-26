@@ -1,0 +1,219 @@
+{
+  "timestamp": "2026-07-26T03:42:20.316Z",
+  "filter": "none",
+  "summary": {
+    "totalAnimals": 12,
+    "activeAnimals": 10,
+    "inactiveAnimals": 2,
+    "averageWeight": 12.43,
+    "heaviestAnimal": {
+      "id": 7,
+      "name": "Bruno",
+      "species": "perro",
+      "breed": "Pastor Aleman",
+      "age": 6,
+      "weight": 38.2,
+      "ownerId": 7,
+      "active": false,
+      "medicalHistory": [
+        "Torsion gastrica",
+        "Cirugia de emergencia"
+      ],
+      "lastVisit": "2025-10-05T09:00:00Z"
+    },
+    "lightestAnimal": {
+      "id": 12,
+      "name": "Pelusa",
+      "species": "conejo",
+      "breed": "Enano",
+      "age": 1,
+      "weight": 1.5,
+      "ownerId": 12,
+      "active": true,
+      "medicalHistory": [
+        "Revision inicial"
+      ],
+      "lastVisit": "2026-02-14T10:00:00Z"
+    },
+    "speciesCount": {
+      "perro": 6,
+      "gato": 4,
+      "conejo": 2
+    }
+  },
+  "animals": [
+    {
+      "id": 1,
+      "name": "Max",
+      "species": "perro",
+      "breed": "Golden Retriever",
+      "age": 3,
+      "weight": 32.5,
+      "ownerId": 1,
+      "active": true,
+      "medicalHistory": [
+        "Vacunacion anual",
+        "Desparasitacion"
+      ],
+      "lastVisit": "2026-01-15T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Luna",
+      "species": "gato",
+      "breed": "Siames",
+      "age": 5,
+      "weight": 4.2,
+      "ownerId": 2,
+      "active": true,
+      "medicalHistory": [
+        "Esterilizacion",
+        "Vacunacion triple felina"
+      ],
+      "lastVisit": "2025-12-10T09:15:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Rocky",
+      "species": "perro",
+      "breed": "Bulldog Frances",
+      "age": 2,
+      "weight": 12.8,
+      "ownerId": 3,
+      "active": false,
+      "medicalHistory": [
+        "Problemas respiratorios",
+        "Alergias"
+      ],
+      "lastVisit": "2025-11-20T16:45:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Milo",
+      "species": "gato",
+      "breed": "Persa",
+      "age": 7,
+      "weight": 5.1,
+      "ownerId": 4,
+      "active": true,
+      "medicalHistory": [
+        "Enfermedad renal cronica"
+      ],
+      "lastVisit": "2026-02-01T14:20:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Nala",
+      "species": "perro",
+      "breed": "Labrador",
+      "age": 4,
+      "weight": 28,
+      "ownerId": 5,
+      "active": true,
+      "medicalHistory": [
+        "Displasia de cadera"
+      ],
+      "lastVisit": "2026-01-28T11:30:00Z"
+    },
+    {
+      "id": 6,
+      "name": "Simba",
+      "species": "gato",
+      "breed": "Maine Coon",
+      "age": 3,
+      "weight": 7.8,
+      "ownerId": 6,
+      "active": true,
+      "medicalHistory": [
+        "Cardiomiopatia"
+      ],
+      "lastVisit": "2026-01-20T15:00:00Z"
+    },
+    {
+      "id": 7,
+      "name": "Bruno",
+      "species": "perro",
+      "breed": "Pastor Aleman",
+      "age": 6,
+      "weight": 38.2,
+      "ownerId": 7,
+      "active": false,
+      "medicalHistory": [
+        "Torsion gastrica",
+        "Cirugia de emergencia"
+      ],
+      "lastVisit": "2025-10-05T09:00:00Z"
+    },
+    {
+      "id": 8,
+      "name": "Coco",
+      "species": "conejo",
+      "breed": "Belier",
+      "age": 2,
+      "weight": 2.3,
+      "ownerId": 8,
+      "active": true,
+      "medicalHistory": [
+        "Problemas dentales"
+      ],
+      "lastVisit": "2026-02-05T12:45:00Z"
+    },
+    {
+      "id": 9,
+      "name": "Toby",
+      "species": "perro",
+      "breed": "Yorkshire",
+      "age": 1,
+      "weight": 2.8,
+      "ownerId": 9,
+      "active": true,
+      "medicalHistory": [
+        "Vacunacion inicial"
+      ],
+      "lastVisit": "2026-02-10T16:30:00Z"
+    },
+    {
+      "id": 10,
+      "name": "Gizmo",
+      "species": "gato",
+      "breed": "Bengala",
+      "age": 4,
+      "weight": 6.5,
+      "ownerId": 10,
+      "active": true,
+      "medicalHistory": [
+        "Infeccion urinaria"
+      ],
+      "lastVisit": "2026-01-25T11:20:00Z"
+    },
+    {
+      "id": 11,
+      "name": "Lola",
+      "species": "perro",
+      "breed": "Poodle",
+      "age": 8,
+      "weight": 7.5,
+      "ownerId": 11,
+      "active": true,
+      "medicalHistory": [
+        "Artritis",
+        "Problemas de vision"
+      ],
+      "lastVisit": "2026-02-12T13:00:00Z"
+    },
+    {
+      "id": 12,
+      "name": "Pelusa",
+      "species": "conejo",
+      "breed": "Enano",
+      "age": 1,
+      "weight": 1.5,
+      "ownerId": 12,
+      "active": true,
+      "medicalHistory": [
+        "Revision inicial"
+      ],
+      "lastVisit": "2026-02-14T10:00:00Z"
+    }
+  ]
+}
