@@ -1,0 +1,96 @@
+### ============================================
+### CLÍNICA VETERINARIA - API CRUD
+### Servidor: http://localhost:3000
+### ============================================
+
+### 1. GET - Listar todos los animales
+GET http://localhost:3000/api/v1/animals
+
+###
+
+### 2. GET - Obtener un animal por ID (id=1)
+GET http://localhost:3000/api/v1/animals/1
+
+###
+
+### 3. POST - Crear un nuevo animal (PERRO)
+POST http://localhost:3000/api/v1/animals
+Content-Type: application/json
+
+{
+  "name": "Toby",
+  "species": "perro",
+  "breed": "Yorkshire",
+  "age": 1,
+  "weight": 2.8,
+  "ownerId": 4,
+  "active": true,
+  "medicalHistory": ["Vacunación inicial"],
+  "lastVisit": "2026-08-01"
+}
+
+###
+
+### 4. POST - Crear un nuevo animal (GATO)
+POST http://localhost:3000/api/v1/animals
+Content-Type: application/json
+
+{
+  "name": "Michi",
+  "species": "gato",
+  "breed": "Siamés",
+  "age": 2,
+  "weight": 4.5,
+  "ownerId": 5,
+  "active": true,
+  "medicalHistory": ["Esterilización"],
+  "lastVisit": "2026-07-15"
+}
+
+###
+
+### 5. PUT - Actualizar un animal (id=1)
+PUT http://localhost:3000/api/v1/animals/1
+Content-Type: application/json
+
+{
+  "name": "Max",
+  "species": "perro",
+  "breed": "Golden Retriever",
+  "age": 4,
+  "weight": 33.5,
+  "ownerId": 1,
+  "active": true,
+  "medicalHistory": ["Vacunación anual", "Desparasitación"],
+  "lastVisit": "2026-08-01"
+}
+
+###
+
+### 6. DELETE - Eliminar un animal (id=3)
+DELETE http://localhost:3000/api/v1/animals/3
+
+###
+
+### 7. GET - Verificar que el animal fue eliminado (debe dar 404)
+GET http://localhost:3000/api/v1/animals/3
+
+###
+
+### 8. GET - Probar ID inválido (debe dar 400)
+GET http://localhost:3000/api/v1/animals/abc
+
+###
+
+### 9. GET - Ruta inexistente (debe dar 404)
+GET http://localhost:3000/api/v1/animales
+
+###
+
+### 10. POST - Intentar crear sin campos requeridos (debe dar 400)
+POST http://localhost:3000/api/v1/animals
+Content-Type: application/json
+
+{
+  "name": "SoloNombre"
+}
