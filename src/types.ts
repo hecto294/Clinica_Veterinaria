@@ -9,8 +9,21 @@
   active: boolean;
   medicalHistory: string[];
   lastVisit: string;
+  createdAt: string;
 }
 
-export type CreateAnimalDto = Omit<Animal, 'id'>;
+export type CreateAnimalDto = Omit<Animal, 'id' | 'createdAt'>;
+export type UpdateAnimalDto = Partial<Omit<Animal, 'id' | 'createdAt'>>;
 
-export interface UpdateAnimalDto extends Partial<Omit<Animal, 'id'>> {}
+export interface PaginatedResponse<T> {
+  data: T[];
+  total: number;
+  page: number;
+  limit: number;
+}
+
+export interface ApiResponse<T> {
+  data?: T;
+  error?: string;
+  message?: string;
+}
