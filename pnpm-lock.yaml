@@ -208,14 +208,14 @@ importers:
   .:
     dependencies:
       express:
-        specifier: ^5.2.1
+        specifier: ^5.0.0
         version: 5.2.1
     devDependencies:
       '@types/express':
-        specifier: ^5.0.6
+        specifier: ^5.0.0
         version: 5.0.6
       '@types/node':
-        specifier: ^20.19.43
+        specifier: ^20.0.0
         version: 20.19.43
       tsx:
         specifier: ^4.0.0
