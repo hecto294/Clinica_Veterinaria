@@ -126,3 +126,15 @@ Las pruebas se realizaron utilizando:
 - **Cliente HTTP integrado de IntelliJ IDEA** para pruebas locales
 - **Curl** para validación desde terminal
 - **Navegador web** para verificación de endpoints GET
+# Semana 03 - API REST con Arquitectura en Capas
+
+refactorizamos la API de la Semana 02 aplicando una **arquitectura profesional en 4 capas** (Routes → Controllers → Services → Repositories). Esto separa las responsabilidades del código, mejora la mantenibilidad y prepara el proyecto para escalar.
+
+## Arquitectura en 4 Capas
+
+| Capa | Responsabilidad |
+|------|-----------------|
+| **Routes** | Define los endpoints de la API |
+| **Controllers** | Maneja peticiones y respuestas HTTP |
+| **Services** | Contiene la lógica de negocio y validaciones |
+| **Repositories** | Accede a los datos (store en memoria) |
