@@ -138,3 +138,51 @@ refactorizamos la API de la Semana 02 aplicando una **arquitectura profesional e
 | **Controllers** | Maneja peticiones y respuestas HTTP |
 | **Services** | Contiene la lógica de negocio y validaciones |
 | **Repositories** | Accede a los datos (store en memoria) |
+
+
+# Semana 04 - Validación, Errores y Logging
+
+---
+
+## Resumen : 
+
+
+
+* En la Semana 04, mejoramos la API de la Semana 03 agregando:
+
+- Validación profesional de datos
+- Manejo estructurado de errores
+- Logging para monitorear lo que pasa en el servidor
+
+---
+
+### 1. Validación con Zod
+
+**Antes (Semana 03):** Validábamos manualmente con `if (!data.name)`.
+
+**Ahora (Semana 04):** Definimos un esquema Zod que valida automáticamente.
+
+Si falta un campo obligatorio → Zod devuelve **400** con lista de errores.
+
+---
+
+### 2. Manejo de Errores con AppError
+
+**Antes (Semana 03):** Usábamos `throw new Error('...')` y el error handler genérico devolvía 500.
+
+**Ahora (Semana 04):** Creamos `AppError` que permite definir el código de estado.
+
+**Resultado:** Errores operacionales (404, 400) tienen su propio código HTTP.
+
+---
+
+### 3. Logging con Winston + Morgan
+
+**Antes (Semana 03):** Usábamos `console.log()` para todo.
+
+**Ahora (Semana 04):** Usamos:
+
+- **Winston** → logs estructurados
+- **Morgan** → logs HTTP
+
+---
