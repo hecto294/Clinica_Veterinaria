@@ -1,0 +1,36 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Species {
+  id        Int       @id @default(autoincrement())
+  name      String    @unique
+  description String?
+  animals   Animal[]
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  @@map("species")
+}
+
+model Animal {
+  id              Int       @id @default(autoincrement())
+  name            String
+  speciesId       Int
+  species         Species   @relation(fields: [speciesId], references: [id])
+  breed           String
+  age             Int
+  weight          Float
+  ownerId         Int
+  active          Boolean   @default(true)
+  medicalHistory  Json?     @default("[]")
+  lastVisit       DateTime?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  @@map("animals")
+}
