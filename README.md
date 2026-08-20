@@ -185,4 +185,48 @@ Si falta un campo obligatorio → Zod devuelve **400** con lista de errores.
 - **Winston** → logs estructurados
 - **Morgan** → logs HTTP
 
+---------
+
+# Semana 05 — PostgreSQL + Prisma ORM
+
 ---
+
+## Resumen
+
+En la Semana 05, migramos la API de la Clínica Veterinaria de un almacenamiento en memoria a una base de datos **PostgreSQL** utilizando **Prisma ORM**, logrando persistencia real de los datos.
+
+---
+
+## ¿Qué hicimos?
+
+### 1. Configuramos PostgreSQL con Docker
+
+Levantamos un contenedor de PostgreSQL en nuestra máquina usando Docker Compose.
+
+### 2. Instalamos y configuramos Prisma
+
+Instalamos Prisma ORM, generamos el cliente y conectamos la API con la base de datos.
+
+### 3. Definimos los modelos de datos
+
+Creamos dos modelos relacionados:
+
+- **Species** (Especies): perro, gato, conejo
+- **Animal** (Pacientes): con una relación 1:N hacia Species
+
+### 4. Ejecutamos migraciones
+
+Creamos las tablas en PostgreSQL a partir de los modelos definidos en Prisma.
+
+### 5. Cargamos datos de prueba (Seed)
+
+Insertamos 3 especies y 12 animales de ejemplo en la base de datos.
+
+### 6. Adaptamos la API para usar Prisma
+
+Actualizamos los repositorios para que usen Prisma Client en lugar del store en memoria.
+
+---
+
+
+

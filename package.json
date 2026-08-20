@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "clinica-veterinaria-api",
   "version": "1.0.0",
   "type": "module",
@@ -8,11 +8,19 @@
     "start": "node dist/server.js"
   },
   "dependencies": {
-    "express": "^5.0.0"
+    "@prisma/adapter-pg": "^7.9.1",
+    "@prisma/client": "^7.9.1",
+    "express": "^5.0.0",
+    "morgan": "^1.11.0",
+    "winston": "^3.19.0",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
-    "@types/node": "^20.0.0",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^20.19.43",
+    "dotenv": "^17.4.2",
+    "prisma": "^7.9.1",
     "tsx": "^4.0.0",
     "typescript": "^5.0.0"
   }

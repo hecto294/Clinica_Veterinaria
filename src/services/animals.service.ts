@@ -1,4 +1,6 @@
 import { AnimalsRepository } from '../repositories/animals.repository.js';
+import { CreateAnimalInput, UpdateAnimalInput } from '../schemas/animals.schema.js';
+import { AppError } from '../errors/AppError.js';
 import { CreateAnimalDto, UpdateAnimalDto } from '../types.js';
 
 export class AnimalsService {
@@ -15,42 +17,39 @@ export class AnimalsService {
   }
 
   async findById(id: number) {
-    if (isNaN(id) || id <= 0) {
-      throw new Error('ID inválido');
+    const animal = await this.repository.findById(id);
+    if (!animal) {
+      throw new AppError(404, `Animal con ID ${id} no encontrado`);
     }
-    return this.repository.findById(id);
+    return animal;
   }
 
-  async create(data: CreateAnimalDto) {
-    if (!data.name || !data.species) {
-      throw new Error('Faltan campos requeridos: name, species');
-    }
-    if (data.age !== undefined && data.age < 0) {
-      throw new Error('La edad no puede ser negativa');
-    }
-    if (data.weight !== undefined && data.weight < 0) {
-      throw new Error('El peso no puede ser negativo');
-    }
-    return this.repository.create(data);
+  async create(data: CreateAnimalInput): Promise<Animal> {
+    return this.repository.create(data as CreateAnimalDto);
   }
 
-  async update(id: number, data: UpdateAnimalDto) {
-    if (isNaN(id) || id <= 0) {
-      throw new Error('ID inválido');
+  async update(id: number, data: UpdateAnimalInput): Promise<Animal> {
+    const existing = await this.repository.findById(id);
+    if (!existing) {
+      throw new AppError(404, `Animal con ID ${id} no encontrado`);
     }
-    if (data.age !== undefined && data.age < 0) {
-      throw new Error('La edad no puede ser negativa');
+
+    const updated = await this.repository.update(id, data as UpdateAnimalDto);
+    if (!updated) {
+      throw new AppError(404, `Animal con ID ${id} no encontrado`);
     }
-    if (data.weight !== undefined && data.weight < 0) {
-      throw new Error('El peso no puede ser negativo');
-    }
-    return this.repository.update(id, data);
+    return updated;
   }
 
-  async delete(id: number) {
-    if (isNaN(id) || id <= 0) {
-      throw new Error('ID inválido');
+  async delete(id: number): Promise<void> {
+    const existing = await this.repository.findById(id);
+    if (!existing) {
+      throw new AppError(404, `Animal con ID ${id} no encontrado`);
     }
-    return this.repository.delete(id);
+
+    const deleted = await this.repository.delete(id);
+    if (!deleted) {
+      throw new AppError(404, `Animal con ID ${id} no encontrado`);
+    }
   }
 }

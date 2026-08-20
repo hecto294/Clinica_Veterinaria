@@ -14,16 +14,3 @@
 
 export type CreateAnimalDto = Omit<Animal, 'id' | 'createdAt'>;
 export type UpdateAnimalDto = Partial<Omit<Animal, 'id' | 'createdAt'>>;
-
-export interface PaginatedResponse<T> {
-  data: T[];
-  total: number;
-  page: number;
-  limit: number;
-}
-
-export interface ApiResponse<T> {
-  data?: T;
-  error?: string;
-  message?: string;
-}

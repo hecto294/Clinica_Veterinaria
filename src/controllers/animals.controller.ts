@@ -25,13 +25,17 @@ export class AnimalsController {
   static async getById(req: Request, res: Response, next: NextFunction) {
     try {
       const id = parseInt(req.params.id);
-      const animal = await animalsService.findById(id);
-
-      if (!animal) {
-        res.status(404).json({
-          error: 'Not Found',
-          message: `Animal con ID ${id} no encontrado`
+      if (isNaN(id) || id <= 0) {
+        res.status(400).json({
+          error: 'Validation Error',
+          issues: [{ path: 'id', message: 'El ID debe ser un número entero positivo' }]
         });
+        return;
+      }
+
+      const animal = await animalsService.findById(id);
+      if (!animal) {
+        res.status(404).json({ error: 'Not Found', message: `Animal con ID ${id} no encontrado` });
         return;
       }
 
@@ -46,13 +50,6 @@ export class AnimalsController {
       const animal = await animalsService.create(req.body);
       res.status(201).json({ data: animal });
     } catch (error) {
-      if (error instanceof Error && error.message.includes('campos requeridos')) {
-        res.status(400).json({
-          error: 'Bad Request',
-          message: error.message
-        });
-        return;
-      }
       next(error);
     }
   }
@@ -60,25 +57,22 @@ export class AnimalsController {
   static async update(req: Request, res: Response, next: NextFunction) {
     try {
       const id = parseInt(req.params.id);
-      const updated = await animalsService.update(id, req.body);
-
-      if (!updated) {
-        res.status(404).json({
-          error: 'Not Found',
-          message: `Animal con ID ${id} no encontrado`
+      if (isNaN(id) || id <= 0) {
+        res.status(400).json({
+          error: 'Validation Error',
+          issues: [{ path: 'id', message: 'El ID debe ser un número entero positivo' }]
         });
+        return;
+      }
+
+      const updated = await animalsService.update(id, req.body);
+      if (!updated) {
+        res.status(404).json({ error: 'Not Found', message: `Animal con ID ${id} no encontrado` });
         return;
       }
 
       res.status(200).json({ data: updated });
     } catch (error) {
-      if (error instanceof Error && error.message.includes('ID inválido')) {
-        res.status(400).json({
-          error: 'Bad Request',
-          message: error.message
-        });
-        return;
-      }
       next(error);
     }
   }
@@ -86,25 +80,22 @@ export class AnimalsController {
   static async delete(req: Request, res: Response, next: NextFunction) {
     try {
       const id = parseInt(req.params.id);
-      const deleted = await animalsService.delete(id);
-
-      if (!deleted) {
-        res.status(404).json({
-          error: 'Not Found',
-          message: `Animal con ID ${id} no encontrado`
+      if (isNaN(id) || id <= 0) {
+        res.status(400).json({
+          error: 'Validation Error',
+          issues: [{ path: 'id', message: 'El ID debe ser un número entero positivo' }]
         });
+        return;
+      }
+
+      const deleted = await animalsService.delete(id);
+      if (!deleted) {
+        res.status(404).json({ error: 'Not Found', message: `Animal con ID ${id} no encontrado` });
         return;
       }
 
       res.status(204).send();
     } catch (error) {
-      if (error instanceof Error && error.message.includes('ID inválido')) {
-        res.status(400).json({
-          error: 'Bad Request',
-          message: error.message
-        });
-        return;
-      }
       next(error);
     }
   }
